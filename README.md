@@ -1,6 +1,8 @@
-# Heroku::Db::Clone
+# heroku-db-clone
 
-TODO: Write a gem description
+Backup a Heroku app's database and restore it locally. Defaults to
+reading the 'development' section of `config/database.yml` to get
+database configuration information.
 
 ## Installation
 
@@ -18,7 +20,9 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+`heroku-db-clone [app-name]`
+
+`heroku-db-clone --help` to get a list of options
 
 ## Contributing
 

@@ -8,8 +8,8 @@ Gem::Specification.new do |gem|
   gem.version       = HerokuDbClone::VERSION
   gem.authors       = ["Cameron Pope"]
   gem.email         = ["cameron@theaboutbox.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
+  gem.description   = %q{Performs a backup of a heroku database, downloads it, and installs it locally, using the information in your config/database.yml file}
+  gem.summary       = %q{Clone a heroku app's database locally}
   gem.homepage      = ""
   gem.executables   << 'heroku-db-clone'
   gem.add_dependency('trollop','~> 2.0.0')
