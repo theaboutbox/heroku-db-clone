@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
-require 'heroku-db-clone'
+require 'heroku_db_clone'
 
 client = HerokuDbClone::Client.new
 client.run
