@@ -1,10 +1,10 @@
 # -*- encoding: utf-8 -*-
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'heroku-db-clone/version'
+require 'heroku_db_clone/version'
 
 Gem::Specification.new do |gem|
-  gem.name          = "heroku-db-clone"
+  gem.name          = "heroku_db_clone"
   gem.version       = HerokuDbClone::VERSION
   gem.authors       = ["Cameron Pope"]
   gem.email         = ["cameron@theaboutbox.com"]

@@ -8,7 +8,7 @@ database configuration information.
 
 Add this line to your application's Gemfile:
 
-    gem 'heroku-db-clone'
+    gem 'heroku_db_clone'
 
 And then execute:
 
@@ -16,13 +16,22 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install heroku-db-clone
+    $ gem install heroku_db_clone
 
 ## Usage
 
 `heroku-db-clone [app-name]`
 
 `heroku-db-clone --help` to get a list of options
+
+## To Do
+
+* Reasonable error messages if we cannot find required executables
+
+* Specify username and password to postgres database if we cannot find
+it
+
+* Handle multi-file database dumps
 
 ## Contributing
 
