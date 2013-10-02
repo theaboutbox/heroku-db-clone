@@ -1,4 +1,5 @@
 require 'trollop'
+require 'yaml'
 
 module HerokuDbClone
   class Client
@@ -71,7 +72,7 @@ module HerokuDbClone
     # Internal: Get the configuration of the local development database
     def load_db_information 
       raise "config/database.yml does not exist at the current location: #{File.expand_path('.')}" unless File.exists?('config/database.yml')
-      dev_db = YAML.load_file('config/database.yml')["development"]
+      dev_db = ::YAML.load_file('config/database.yml')["development"]
       @db_name     = dev_db["database"]
       @db_user     = dev_db['username']
       @db_password = dev_db['password']
