@@ -30,12 +30,12 @@ module HerokuDbClone
 
     def capture
       log "Capturing production database snapshot..."
-      exec "heroku pgbackups:capture --expire --app #{@app_name}"
+      exec "heroku pg:backups capture --app #{@app_name}"
     end
 
     def download
       log "Downloading snapshot..."
-      exec "curl -o #{@opts[:dump_name]} \`heroku pgbackups:url --app #{@app_name}\`"
+      exec "curl -o #{@opts[:dump_name]} \`heroku pg:backups public-url --app #{@app_name}\`"
     end
 
     def drop
